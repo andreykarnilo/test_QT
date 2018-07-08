@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>416</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>416</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res/res.qrc">
+    <normaloff>:/icon.ico</normaloff>:/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="button_login">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>352</y>
+      <width>119</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#button_login {
+	background-image: url(:/button/button_login.png);
+     border-style: inset;
+     border-width: 0px;
+     border-radius:0px;
+     border-top:0px;	
+	 border-bottom:0px;
+     
+    /*font-size:11pt;*/
+    font-weight: bold;
+    color: #FFFFFF;
+ }
+ QPushButton#button_login:pressed {
+   background-image: url(:/button/button_login_pres.png);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_email">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>252</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+background-color: rgb(255,255,255);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_pass">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>292</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>327</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*QCheckBox {
+font-size: 9pt;  
+}*/
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/checkbox/checkbox_off.png);
+}
+
+QCheckBox::indicator:unchecked:hover {
+    image:url(:/checkbox/checkbox_off.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/checkbox/checkbox_off.png);
+}
+
+QCheckBox::indicator:checked {
+    image:url(:/checkbox/checkbox_on.png);    
+}
+
+QCheckBox::indicator:checked:hover {
+    image:url(:/checkbox/checkbox_on.png);    
+}
+
+QCheckBox::indicator:checked:pressed {
+    image:url(:/checkbox/checkbox_on.png);    
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Remember</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

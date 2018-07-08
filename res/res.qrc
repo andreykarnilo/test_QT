@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>button/button_login.png</file>
+        <file>button/button_login_pres.png</file>
+        <file>checkbox/checkbox_off.png</file>
+        <file>checkbox/checkbox_on.png</file>
+        <file>backgrounds/login.png</file>
+        <file>icon.ico</file>
+        <file>button/button_delete.png</file>
+    </qresource>
+</RCC>
